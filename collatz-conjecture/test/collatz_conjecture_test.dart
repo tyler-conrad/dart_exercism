@@ -9,7 +9,7 @@ import 'package:test/test.dart';
 void main() {
   final collatzConjecture = new CollatzConjecture();
   final onlyPositive = predicate(
-      (ArgumentError e) => e is ArgumentError && e.message == 'Only positive numbers are allowed',
+      (ArgumentError e) => e.message == 'Only positive numbers are allowed',
       'an ArgumentError with the message "Only positive numbers are allowed"');
 
   group('CollatzConjecture', () {

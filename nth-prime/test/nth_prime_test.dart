@@ -3,7 +3,7 @@ import 'package:test/test.dart';
 
 void main() {
   final nthPrime = new NthPrime();
-  final noZerothPrime = predicate((ArgumentError e) => e is ArgumentError && e.message == 'There is no zeroth prime',
+  final noZerothPrime = predicate((ArgumentError e) => e.message == 'There is no zeroth prime',
       'an ArgumentError with the message "There is no zeroth prime"');
 
   group('NthPrime', () {

@@ -118,5 +118,6 @@ class PhoneNumber {
         }
       }
     }
+    return null;
   }
 }
